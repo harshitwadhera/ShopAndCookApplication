@@ -3,7 +3,7 @@
   "version": 1, 
   "newProjectRoot": "projects",
   "projects": {
-    "shopandcook": {
+    "ShopAndCookApplction": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -67,18 +67,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "shopandcook:build"
+            "browserTarget": "ShopAndCookApplction:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "shopandcook:build:production"
+              "browserTarget": "ShopAndCookApplction:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "shopandcook:build"
+            "browserTarget": "ShopAndCookApplction:build"
           }
         },
         "test": {
@@ -115,15 +115,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "shopandcook:serve"
+            "devServerTarget": "ShopAndCookApplction:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "shopandcook:serve:production"
+              "devServerTarget": "ShopAndCookApplction:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "shopandcook"
+  "defaultProject": "ShopAndCookApplction"
 }
