@@ -18,6 +18,7 @@ export class RecipeDetailComponent implements OnInit {
 
   selectedRecipe:any;
   id: any;
+  id2:any;
 post:boolean=false;
   constructor(private shopService:ShoppingListService,private router:ActivatedRoute,private routes:Router
     ,private recipeServce:RecipesService,private recipeStore:Store<globalReducer.AppState>) {
