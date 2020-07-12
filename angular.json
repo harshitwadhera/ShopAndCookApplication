@@ -3,7 +3,7 @@
   "version": 1, 
   "newProjectRoot": "projects",
   "projects": {
-    "ShopAndCook": {
+    "shopandcook": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ShopAndCook",
+            "outputPath": "dist/shopandcook",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -28,6 +28,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.sass"
             ],
             "scripts": []
@@ -66,18 +67,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ShopAndCook:build"
+            "browserTarget": "shopandcook:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ShopAndCook:build:production"
+              "browserTarget": "shopandcook:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ShopAndCook:build"
+            "browserTarget": "shopandcook:build"
           }
         },
         "test": {
@@ -114,15 +115,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "ShopAndCook:serve"
+            "devServerTarget": "shopandcook:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "ShopAndCook:serve:production"
+              "devServerTarget": "shopandcook:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "ShopAndCook"
+  "defaultProject": "shopandcook"
 }
